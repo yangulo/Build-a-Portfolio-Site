@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding-top: 8px;
+}
+
+header, main {
+    padding-left: 8px;
+}
+
+.wrapper {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.body-header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    grid-template-areas: 
+    "name logo" 
+    "position logo";
+}
+
+.job-position {
+    font-size: 1.5em;
+    padding-left: 0.1em;
+    margin-block-end: 0;
+    margin-block-start: 0em;
+}
+
+hr {
+    background-image: linear-gradient(90deg, #00e1ff, #e52e71);
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.hr-padding {
+    align-content: 0;
+}
+
+.inside-hr {
+    background-image: linear-gradient(90deg, #0099ff, #2ee5dc);
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.logo {
+    padding-right: 1em;
+    padding-left: 1em;
+    width: 150px;
+    grid-area: logo;
+    position: relative;
+}
+
+.name {
+    font-size: 2em;
+    grid-area: name;
+    margin-block-start: 0.5em;
+    margin-block-end: 0;
+}
+
+.position {
+    grid-area: position;
+}
+
+.body-main {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr;
+    grid-template-rows: 0.5fr 0.25fr 0.5fr 0.5fr 1fr 1fr 0.5fr 1fr;
+    grid-template-areas: 
+    "objective objective-txt objective-txt2" 
+    "education education-txt usf-img" 
+    "skills skills-txt react-img" 
+    "diploma diploma-txt udacity-img" 
+    "project1 project-txt1 js-img" 
+    "project2 project-txt2 css-img" 
+    "project3 project-txt3 html-img" 
+    "project4 project-txt4 not-used";
+}
+
+.objective {
+    grid-area: objective;
+}
+
+.objective-txt {
+    grid-area: objective-txt;
+}
+
+.education {
+    grid-area: education;
+}
+
+.education-txt {
+    grid-area: education-txt;
+}
+
+.usf-img {
+    grid-area: usf-img;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.skills-txt {
+    grid-area: skills-txt;
+}
+
+.react-img {
+    grid-area: react-img;
+}
+
+.diploma {
+    grid-area: diploma;
+}
+
+.diploma-txt {
+    grid-area: diploma-txt;
+}
+
+.udacity-img {
+    grid-area: udacity-img;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project-txt1 {
+    grid-area: project-txt1;
+}
+
+.js-img {
+    grid-area: js-img;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project-txt2 {
+    grid-area: project-txt2;
+}
+
+.css-img {
+    grid-area: css-img;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project-txt3 {
+    grid-area: project-txt3;
+}
+
+.html-img {
+    grid-area: html-img;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+.project-txt4 {
+    grid-area: project-txt4;
+}
+
+.main-subtitle {
+    margin-block-start: 1.5em;
+    padding-left: 3em;
+    margin-right: 1em;
+    color: #727071;
+}
+
+p {
+    margin-block-start: 1.5em;
+    text-align: justify;
+    letter-spacing: normal;
+}
+
+.tools {
+    color: #727071;
+}
+
+span {
+    font-weight: bold;
+}
+
+li {
+    text-align: justify;
+    list-style-type: circle;
+}
+
+ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #00e1ff;
+    /* Change the color */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+article, footer {
+    margin-left: 0.5em;
+}
+
+.main-img {
+    max-width: 110px;
+    min-height: 110px;
+    padding-left: 10%;
+}
+
+.main-large-img {
+    max-width: 100px;
+    max-height: 100px;
+    padding-left: 17%;
+}
+
+footer {
+    background-image: linear-gradient(90deg, #00e1ff, #e52e71);
+    margin-left: 0;
+    padding-left: 10px;
+}

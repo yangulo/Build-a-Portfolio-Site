@@ -1,0 +1,54 @@
+.body-header {
+    display: grid;
+    grid-template-columns: 2fr 0.25fr;
+    grid-template-areas: 
+    "name logo" 
+    "position logo";
+}
+
+.body-main {
+    display: grid;
+    grid-template-columns: 0.95fr;
+    grid-template-rows: 0.05fr 0.50fr 0.05fr 0.25fr 0.05fr 0.50fr 0.05fr 0.50fr 0.05fr 0.50fr 0.05fr 0.50fr 0.05fr 0.50fr 0.05fr 0.50fr;
+    grid-template-areas: 
+    "objective" 
+    "objective-txt" 
+    "education" 
+    "education-txt" 
+    "skills" 
+    "skills-txt" 
+    "diploma" 
+    "diploma-txt" 
+    "project1" 
+    "project-txt1" 
+    "project2" 
+    "project-txt2" 
+    "project3" 
+    "project-txt3" 
+    "project4" 
+    "project-txt4";
+}
+
+.logo {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 25px;
+    width: 150px;
+    grid-area: logo;
+}
+
+.main-img {
+    display: none;
+}
+
+.main-large-img {
+    display: none;
+}
+
+.main-subtitle {
+    margin-block-start: 0;
+    margin-left: 0.5em;
+    padding-left: 0;
+    margin-right: 1em;
+    color: #727071;
+}
